@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True">
-        <Image Name="imgTumblr" Source="tumblr.png" Width="150" Height="150" Canvas.Left="312" Canvas.Top="259" ></Image>
+        <Image Name="imgTumblr" Source="tumblr.png" Width="123" Height="123" Canvas.Left="62" Canvas.Top="37" ></Image>
+        <Image Name="imgCelular" Source="celular.png" Width="173" Height="146" Stretch="Uniform" Canvas.Left="308" Canvas.Top="246"></Image>
     </Canvas>
 </Window>
