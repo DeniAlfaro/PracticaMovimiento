@@ -6,8 +6,16 @@
         xmlns:local="clr-namespace:PracticaMovimiento"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True">
-        <Image Name="imgTumblr" Source="tumblr.png" Width="123" Height="123" Canvas.Left="62" Canvas.Top="37" ></Image>
-        <Image Name="imgCelular" Source="celular.png" Width="173" Height="146" Stretch="Uniform" Canvas.Left="308" Canvas.Top="246"></Image>
+    <Canvas>
+        <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True" Visibility="Visible">
+            <Image Name="imgTumblr" Source="tumblr.png" Width="123" Height="123" Canvas.Left="62" Canvas.Top="37" ></Image>
+            <Image Name="imgCelular" Source="celular.png" Width="173" Height="146" Stretch="Uniform" Canvas.Left="308" Canvas.Top="246"></Image>
+            <TextBlock x:Name="lblinterseccionX" Canvas.Left="6" TextWrapping="Wrap" Text="No hay intersección en X" Canvas.Top="8"/>
+            <TextBlock x:Name="lblinterseccionY" Canvas.Left="6" TextWrapping="Wrap" Text="No hay intersección en Y" Canvas.Top="24"/>
+            <TextBlock x:Name="lblcolision" Canvas.Left="6" TextWrapping="Wrap" Text="No hay colisión " Canvas.Top="39"/>
+        </Canvas>
+        <Canvas Name="canvasGameOver" Visibility="Collapsed">
+            <TextBlock Canvas.Left="269" Canvas.Top="116" Height="100" Width="253" FontSize="48" Foreground="#FFE00808">Game Over</TextBlock>
+        </Canvas>
     </Canvas>
 </Window>
