@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True" Visibility="Visible">
+        <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" KeyUp="miCanvas_KeyUp" Focusable="True" Visibility="Visible">
             <Image Name="imgTumblr" Source="tumblr.png" Width="123" Height="123" Canvas.Left="62" Canvas.Top="37" ></Image>
             <Image Name="imgCelular" Source="celular.png" Width="173" Height="146" Stretch="Uniform" Canvas.Left="308" Canvas.Top="246"></Image>
             <TextBlock x:Name="lblinterseccionX" Canvas.Left="6" TextWrapping="Wrap" Text="No hay intersección en X" Canvas.Top="8"/>
